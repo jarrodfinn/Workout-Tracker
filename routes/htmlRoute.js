@@ -32,19 +32,8 @@ router.get("*", function(req, res) {
 router.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
+  router.get("/workout", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/workout.html"));
+  });
   
-// router.post("/api/workouts", function(req, res) {
-//   Workout.create({})
-//     .then(data => res.json(data))
-//     .catch(err => {
-//       console.log("err", err);
-//       res.json(err);
-//     });
-// });
-
-// // define the about route
-// router.get("/about", function(req, res) {
-//   res.send("About birds");
-// });
-
 module.exports = router;
