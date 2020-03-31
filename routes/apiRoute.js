@@ -12,8 +12,8 @@ module.exports = function(app) {
   
   router.get("/api/workouts", (req, res) => {
     Workout.find()
-      .then(workouts => {
-        res.json(workouts);
+      .then(dbWorkout => {
+        res.json(dbWorkout);
       })
       .catch(err => {
         res.json(err);
@@ -22,8 +22,8 @@ module.exports = function(app) {
   
   router.post("/api/workouts", (req, res) => {
   Workout.create({})
-    .then(workouts => {
-      res.json(workouts);
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
@@ -37,8 +37,8 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
 
     { new: true, runValidators: true }
   )
-    .then(workouts => {
-      res.json("id");
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
@@ -47,9 +47,9 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
 
 router.get("/api/workouts/range", (req, res) => {
   Workout.find({})
-    .then(workouts => {
-      // console.log(workouts)
-      res.json(workouts);
+    .then(dbWorkout => {
+      // console.log(dbWorkout)
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
