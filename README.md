@@ -7,7 +7,7 @@
 ## Getting Started
 
 The application is deployed on Heroku. 
-https://frightfinder.herokuapp.com/
+https://jpf-workout-tracker.herokuapp.com/
 
 ## Business Context
 
