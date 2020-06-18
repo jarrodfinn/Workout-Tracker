@@ -1,6 +1,4 @@
-# Homework-17
-
-Unit 17 Nosql Homework: Workout Tracker
+# Workout Tracker
 
 ## User Story
 
@@ -10,7 +8,7 @@ Unit 17 Nosql Homework: Workout Tracker
 
 A consumer will reach their fitness goals quicker when they track their workout progress.
 
-## Acceptance Criteria
+## Functionality
 
 When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
 
